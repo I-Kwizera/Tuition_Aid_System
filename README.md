@@ -134,19 +134,21 @@ BEGIN
   END IF;
 END;
 
-## 📌 Conclusion
-
+📌 Conclusion
 This Tuition Aid System delivers a secure, transparent, and automated alternative to traditional financial aid. Through the use of MIS principles, Oracle PL/SQL, and effective auditing mechanisms, it supports disadvantaged yet deserving students in accessing higher education — debt-free.
 
-## 🔮 Recommendations & Future Work
+🔮 Recommendations & Future Work
+Build a web interface for student interaction
 
-- Build a web interface for student interaction  
-- Add monthly reports from audit logs  
-- Automate public holiday entry  
-- Role-based user access
+Add monthly reports from audit logs
 
-## 📚 References
+Automate public holiday entry
 
-- Oracle 19c PL/SQL Documentation  
-- draw.io diagrams (BPMN, ERD)  
-- GitHub for version control
+Role-based user access
+
+📚 References
+Oracle 19c PL/SQL Documentation
+
+draw.io diagrams (BPMN, ERD)
+
+GitHub for version control
