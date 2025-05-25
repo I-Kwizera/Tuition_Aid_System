@@ -71,6 +71,28 @@ Created a pluggable Oracle database:
 - OEM configured to monitor performance and usage
 - Super admin privileges granted
 
+  In this phase, the physical Oracle database environment was set up to support the tuition aid system. Using Oracle 19c, a Pluggable Database (PDB) was created and named THU_27472_Innocent_TuitionAid_DB. The administrative user tuition_user was granted super privileges to allow full database development.
+
+Oracle Enterprise Manager (OEM) was also configured to monitor performance metrics, access privileges, and session management. This ensures administrators can track database usage, detect anomalies, and optimize performance.
+
+📌 Key Features:
+
+- PDB configured for schema isolation
+- Admin account with full rights
+- Secure password naming conventions
+- OEM monitoring dashboard enabled
+
+📷 OEM Monitoring:
+
+![ERD Diagram]()
+
+📝 Supporting evidence of creation:
+
+![ERD Diagram]()
+
+- Screenshot of SQL Developer session establishing successful connection
+- PDB and user creation logs from the command line
+
 ## 🟪 PHASE V – Table Implementation & Data Insertion
 
 Transformed logical design into physical tables using DDL:
