@@ -101,9 +101,9 @@ Transformed logical design into physical tables using DDL:
 
 ![Creating tables and inserting data into tables](https://github.com/I-Kwizera/Tuition_Aid_System/blob/1e31a0408a0867c400cbb788440e512dab9b64b1/PHASE%20V/tuition_aid_phaseV%20to%20creste%20tables%20and%20insert%20data%20into%20tables.sql)
 
-![table creation using constraints,PK and FK](https://github.com/I-Kwizera/Tuition_Aid_System/blob/40af985d55e7a66381e46c8cbbd47333a444a3ce/PHASE%20V/table%20creation%20using%20constraints%2C%20PK%20and%20FK.png)
+![table creation using constraints PK and FK](https://github.com/I-Kwizera/Tuition_Aid_System/blob/40af985d55e7a66381e46c8cbbd47333a444a3ce/PHASE%20V/table%20creation%20using%20constraints%2C%20PK%20and%20FK.png)
 
-![ERD Diagram]()
+![Data insertion](https://github.com/I-Kwizera/Tuition_Aid_System/blob/d98eb3b7e0c71d9c0f2d1c65961184bfec2d6401/PHASE%20V/DATA%20INSERTION%20IN%20TABLES.png)
   
 ## 🟫 PHASE VI – Interaction & Transactions
 
@@ -121,6 +121,8 @@ Implemented:
 - `Action_Audit` logs every allowed/denied attempt
 - `Log_Application_Deletion` tracks deletions
 - `AuditUtil` package to insert logs programmatically
+
+  ![Data insertion]()
 
 ## 🟩 PHASE VIII – Documentation & Reporting
 
