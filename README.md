@@ -83,7 +83,7 @@ Oracle Enterprise Manager (OEM) was also configured to monitor performance metri
 
 📷 OEM Monitoring:
 
-![ERD Diagram]()
+![ERD Diagram](https://github.com/I-Kwizera/Tuition_Aid_System/blob/1f6032d51dad42cef1cfe7353b609283dbf3bacf/PHASE%20V/OEM%20status.png)
 
 📝 Supporting evidence of creation:
 
