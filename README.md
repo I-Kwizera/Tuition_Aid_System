@@ -126,7 +126,7 @@ Implemented:
 - `Log_Application_Deletion` tracks deletions
 - `AuditUtil` package to insert logs programmatically
 
-  ![]()
+  ![triger restriction of working hours](https://github.com/I-Kwizera/Tuition_Aid_System/blob/78de748203ec98d26477b6aa6a1c41dbc2ec6d4f/PHASE%20VII/TRIGGER%20Restrict_Working_Hours.png)
 
 ## 🟩 PHASE VIII – Documentation & Reporting
 
