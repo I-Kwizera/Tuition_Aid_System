@@ -113,6 +113,10 @@ Created:
 - Exception handling for safety
 - Packaged procedures for reusability
 
+![]()
+
+![]()
+
 ## 🟦 PHASE VII – Advanced Programming & Auditing
 
 Implemented:
@@ -122,7 +126,7 @@ Implemented:
 - `Log_Application_Deletion` tracks deletions
 - `AuditUtil` package to insert logs programmatically
 
-  ![Data insertion]()
+  ![]()
 
 ## 🟩 PHASE VIII – Documentation & Reporting
 
