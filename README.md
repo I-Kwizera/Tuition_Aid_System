@@ -52,7 +52,7 @@ This phase involved modeling the workflow of the tuition aid process using BPMN 
 - Gateways control decision points (e.g., is the student eligible?)
 - Diagrams created in draw.io
 
-  ![Alt text](https://github.com/I-Kwizera/Tuition_Aid_System/blob/a984d52fa090c040a36e5f9653c1afd10c0c7466/PHASE%20II/bpmn%20draw.io.png)
+  ![tuition aid system BPMN](https://github.com/I-Kwizera/Tuition_Aid_System/blob/a984d52fa090c040a36e5f9653c1afd10c0c7466/PHASE%20II/bpmn%20draw.io.png)
   
 ## 🟧 PHASE III – Logical Model Design
 
@@ -99,9 +99,9 @@ Transformed logical design into physical tables using DDL:
 - Inserted realistic sample data (students with different GPA/income levels)
 - Validated integrity with test queries
 
-![ERD Diagram](https://github.com/I-Kwizera/Tuition_Aid_System/blob/1e31a0408a0867c400cbb788440e512dab9b64b1/PHASE%20V/tuition_aid_phaseV%20to%20creste%20tables%20and%20insert%20data%20into%20tables.sql)
+![Creating tables and inserting data into tables](https://github.com/I-Kwizera/Tuition_Aid_System/blob/1e31a0408a0867c400cbb788440e512dab9b64b1/PHASE%20V/tuition_aid_phaseV%20to%20creste%20tables%20and%20insert%20data%20into%20tables.sql)
 
-![ERD Diagram](https://github.com/I-Kwizera/Tuition_Aid_System/blob/40af985d55e7a66381e46c8cbbd47333a444a3ce/PHASE%20V/table%20creation%20using%20constraints%2C%20PK%20and%20FK.png)
+![table creation using constraints,PK and FK](https://github.com/I-Kwizera/Tuition_Aid_System/blob/40af985d55e7a66381e46c8cbbd47333a444a3ce/PHASE%20V/table%20creation%20using%20constraints%2C%20PK%20and%20FK.png)
 
 ![ERD Diagram]()
   
