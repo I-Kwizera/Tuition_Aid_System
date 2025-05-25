@@ -71,8 +71,7 @@ Created a pluggable Oracle database:
 - OEM configured to monitor performance and usage
 - Super admin privileges granted
 
-  In this phase, the physical Oracle database environment was set up to support the tuition aid system. Using Oracle 19c, a Pluggable Database (PDB) was created and named THU_27472_Innocent_TuitionAid_DB. The administrative user tuition_user was granted super privileges to allow full database development.
-
+In this phase, the physical Oracle database environment was set up to support the tuition aid system. Using Oracle 19c, a Pluggable Database (PDB) was created and named THU_27472_Innocent_TuitionAid_DB. The administrative user tuition_user was granted super privileges to allow full database development.
 Oracle Enterprise Manager (OEM) was also configured to monitor performance metrics, access privileges, and session management. This ensures administrators can track database usage, detect anomalies, and optimize performance.
 
 📌 Key Features:
@@ -88,7 +87,7 @@ Oracle Enterprise Manager (OEM) was also configured to monitor performance metri
 
 📝 Supporting evidence of creation:
 
-![ERD Diagram]()
+![ERD Diagram](https://github.com/I-Kwizera/Tuition_Aid_System/blob/70a2e5c4ba50b0f46b936d029219a4b2a591329c/PHASE%20IV/SQLDEVELOPER%20PANEL%20CONNECTION.png)
 
 - Screenshot of SQL Developer session establishing successful connection
 - PDB and user creation logs from the command line
