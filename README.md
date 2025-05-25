@@ -52,6 +52,8 @@ This phase involved modeling the workflow of the tuition aid process using BPMN 
 - Gateways control decision points (e.g., is the student eligible?)
 - Diagrams created in draw.io
 
+  ![Alt text](https://github.com/I-Kwizera/Tuition_Aid_System/blob/a984d52fa090c040a36e5f9653c1afd10c0c7466/PHASE%20II/bpmn%20draw.io.png)
+  
 ## 🟧 PHASE III – Logical Model Design
 
 In this phase, an Entity-Relationship Diagram (ERD) was created to represent the data model. It includes:
