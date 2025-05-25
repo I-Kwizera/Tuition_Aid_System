@@ -99,6 +99,10 @@ Transformed logical design into physical tables using DDL:
 - Inserted realistic sample data (students with different GPA/income levels)
 - Validated integrity with test queries
 
+![ERD Diagram](https://github.com/I-Kwizera/Tuition_Aid_System/blob/1e31a0408a0867c400cbb788440e512dab9b64b1/PHASE%20V/tuition_aid_phaseV%20to%20creste%20tables%20and%20insert%20data%20into%20tables.sql)
+
+![ERD Diagram]()
+  
 ## 🟫 PHASE VI – Interaction & Transactions
 
 Created:
