@@ -61,7 +61,7 @@ In this phase, an Entity-Relationship Diagram (ERD) was created to represent the
 - Primary and foreign keys
 - Normalized to 3NF
 
-  ![ERD Diagram](erd.png)
+  ![ERD Diagram](https://github.com/I-Kwizera/Tuition_Aid_System/blob/8a70b3e48db5de0ab52698f167db27762c770f60/PHASE%20III/ERD%20.png)
 
 ## 🟥 PHASE IV – Database Creation
 
