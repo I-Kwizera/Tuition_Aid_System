@@ -38,4 +38,76 @@ This Tuition Aid System introduces a data-driven alternative designed to complem
 
 The project was developed across 8 structured MIS-based phases: from modeling to implementation, transaction handling, auditing, and documentation.
 
-... (Full README content continues)
+## 🟩 PHASE I – Problem Definition
+
+This phase sets the foundation of the Tuition Aid System by identifying the challenges in the current landscape of financial support for higher education. While existing government systems are primarily academic-merit-based and rely on repayable loans, they don't always accommodate students from low-income backgrounds who struggle silently. This system introduces a complementary solution: a non-repayable tuition aid program that assesses both the academic performance and the financial situation of students.
+
+The aim is to automate the selection process through a secure, MIS-supported Oracle database system using PL/SQL to avoid bias and ensure transparency.
+
+## 🟨 PHASE II – Business Process Modeling
+
+This phase involved modeling the workflow of the tuition aid process using BPMN diagrams. The system workflow begins when a student submits an application. The Management Information System (MIS) stores the data and notifies the administrator. The administrator reviews the documents, and the MIS checks eligibility based on GPA and financial data. If the student is eligible and funds are available, a disbursement is approved.
+
+- Swimlanes represent actors: student, MIS, admin, funding source
+- Gateways control decision points (e.g., is the student eligible?)
+- Diagrams created in draw.io
+
+## 🟧 PHASE III – Logical Model Design
+
+In this phase, an Entity-Relationship Diagram (ERD) was created to represent the data model. It includes:
+- `Student`, `Application`, `Administrator`, `FundingSource`, `Disbursement`
+- Primary and foreign keys
+- Normalized to 3NF
+
+## 🟥 PHASE IV – Database Creation
+
+Created a pluggable Oracle database:
+- Named `THU_27472_Innocent_TuitionAid_DB`
+- Admin user: `tuition_user`
+- OEM configured to monitor performance and usage
+- Super admin privileges granted
+
+## 🟪 PHASE V – Table Implementation & Data Insertion
+
+Transformed logical design into physical tables using DDL:
+- Tables created with constraints (PK, FK, NOT NULL, UNIQUE, DEFAULT)
+- Inserted realistic sample data (students with different GPA/income levels)
+- Validated integrity with test queries
+
+## 🟫 PHASE VI – Interaction & Transactions
+
+Created:
+- A procedure using CURSOR to list all applications
+- A function (`GETTOTALAID`) to calculate total disbursement for a student
+- Exception handling for safety
+- Packaged procedures for reusability
+
+## 🟦 PHASE VII – Advanced Programming & Auditing
+
+Implemented:
+- `Holiday_Dates` table to list upcoming holidays
+- Trigger `Restrict_Working_Hours` blocks DML on weekdays & holidays
+- `Action_Audit` logs every allowed/denied attempt
+- `Log_Application_Deletion` tracks deletions
+- `AuditUtil` package to insert logs programmatically
+
+## 🟩 PHASE VIII – Documentation & Reporting
+
+- GitHub structured phase-by-phase  
+- README includes code, explanation, and diagrams  
+- PowerPoint presentation created (10 slides max)  
+
+---
+
+## 📄 Summary of Key SQL Snippets
+
+```sql
+CREATE TABLE Student (
+  student_id NUMBER PRIMARY KEY,
+  name VARCHAR2(100),
+  email VARCHAR2(100) UNIQUE,
+  date_of_birth DATE,
+  family_income NUMBER(10,2),
+  gpa NUMBER(3,2)
+);
+
