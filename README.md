@@ -59,6 +59,8 @@ In this phase, an Entity-Relationship Diagram (ERD) was created to represent the
 - Primary and foreign keys
 - Normalized to 3NF
 
+  ![ERD Diagram](erd.png)
+
 ## 🟥 PHASE IV – Database Creation
 
 Created a pluggable Oracle database:
