@@ -111,3 +111,25 @@ CREATE TABLE Student (
   gpa NUMBER(3,2)
 );
 
+CREATE OR REPLACE TRIGGER Restrict_Working_Hours
+BEFORE INSERT OR UPDATE OR DELETE ON Application
+FOR EACH ROW
+DECLARE
+  PRAGMA AUTONOMOUS_TRANSACTION;
+  v_day VARCHAR2(10);
+  v_today DATE := TRUNC(SYSDATE);
+  v_is_holiday NUMBER;
+BEGIN
+  v_day := TO_CHAR(SYSDATE, 'DY', 'NLS_DATE_LANGUAGE=ENGLISH');
+  SELECT COUNT(*) INTO v_is_holiday FROM Holiday_Dates WHERE holiday_date = v_today;
+  IF v_day IN ('MON','TUE','WED','THU','FRI') OR v_is_holiday > 0 THEN
+    INSERT INTO Action_Audit (username, operation, table_name, status)
+    VALUES (USER, ORA_SYSEVENT, 'APPLICATION', 'DENIED');
+    COMMIT;
+    RAISE_APPLICATION_ERROR(-20001, 'Modifications are not allowed on weekdays or holidays.');
+  ELSE
+    INSERT INTO Action_Audit (username, operation, table_name, status)
+    VALUES (USER, ORA_SYSEVENT, 'APPLICATION', 'ALLOWED');
+    COMMIT;
+  END IF;
+END;
